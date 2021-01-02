@@ -348,7 +348,7 @@ section.blog .card-wrapper{
     
 }
 section.blog .card-wrapper .card{
-    background: 	#d0f0fb;
+    background: var(--pure);
 }
 section.blog .card-wrapper .card .img-wrappe img{
       width: 70%;
