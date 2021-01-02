@@ -7,18 +7,24 @@
     --Light:#f2F2F2;
     --darkest:#253529;
     --onxy:#353839;
+}
 
-
-   body{
-       font-family: 'poppins',sans-serif;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
-   }
-    *{
+    body{
+    
+        font-family: 'poppiens',sans-serif;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+    }
+html{
+    scroll-behavior: smooth;
+}
+     *{
         padding: 0;
-        margin:0;
-        box-sizzling:border-box;
+        margin: 0;
+        box-sizing: border-box;
         -webkit-font-smothing:antialiased;
     }
-}
+
+
+
 
 header{
     background: var(--Dark);
@@ -393,7 +399,7 @@ section.contact .card-wrapper {
 
 
 section.contact .card-wrapper .card img{
-    width: 6rem%;
+    width: 6rem;
     height: 6rem;
     position: relative;
     margin-bottom:2rem;
@@ -404,12 +410,16 @@ section.contact .card-wrapper .card{
 section.contact .card-wrapper .card h1{
     font-weight: 400%;
     margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-decoration: wavy;
 
 }
 section.contact .card-wrapper .card  h6{
     font-size: 1rem;
     color: var(--ternary);
     font-weight: 400%;
+    margin-bottom: 4rem;
+    
 }
 section.contact .input-wrap{
     display: grid;
@@ -420,19 +430,56 @@ section.contact .input-wrap{
 section.contact .input-wrap-2{
     display: flex;
     flex-direction: column;
+    font-size: 0.9rem;
     
 }
 section.contact .input-wrap-2 input{
     margin-bottom: 2rem;
     border:1px solid var(--Light);
-    font-size: 1rem;
+    font-size: 0.9rem;
+    
 }
 section.contact input{
     padding: 0.5rem;
     border:1px solid var(--Light);
+    font-size: 0.9rem;
+   
 }
 section.contact .input-wrap-2 textarea{
     padding: 0.5rem;
     border:1px solid var(--Light);
-    font-size: 1rem;
+    font-size: 0.9rem;
+}
+section.contact .input-wrap-2 textarea:focus ,section.contact input:focus{
+outline: none;
+}
+section.contact .btn_wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+/*footer*/
+footer{
+    background: var(--Dark);
+    text-align: center;
+    padding: 4rem 0;
+}
+footer .footer-logo{
+    margin-bottom: 3rem;
+   width: 130px;
+}
+footer .footer-social a{
+    margin-right: 1rem;
+    justify-content: center;
+    
+}
+footer .footer-social a img{
+    max-width: 30px;
+    margin-bottom: 1rem;
+}
+footer .footer-social{
+    margin-bottom: 3rem;
+}
+footer .copyright{
+    color: var(--Light);
+    text-decoration:solid;
 }
